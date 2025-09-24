@@ -9,7 +9,7 @@ export default function Header() {
         {/* tetra : 이미지 크기 문제로 backgroundSize 추가 */}
         <h1>
           <b>CYP. 입자 능력자</b>
-          <span>
+          <span> 
             직관의<em>테트라</em>
           </span>
         </h1>
