@@ -34,7 +34,7 @@ export default function SkillBox({ skill }) {
       <div className="s2_3">
         <h3>스킬 영상</h3>
         <div className="video">
-            <video
+            {/* <video
             width="605"
             height="340"
             controls
@@ -42,12 +42,14 @@ export default function SkillBox({ skill }) {
             poster={skill.video.poster}
             >
             <source src={skill.video.src} type="video/mp4" />
-            </video>
+            </video> */}
+            <img src={skill.img}></img>
         </div>
       </div>
 
+      {/* -------------------------- 더보기 미사용 -------------------------- */}
       {/* 열리는 영억 */}
-      {isOpen && (
+      {false && isOpen && ( 
       <div className="s2_4 m_info" style={{display:"block"}}>
         <h3>상세 설명</h3>
         <p className="txt">{skill.detail}</p>
