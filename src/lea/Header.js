@@ -18,8 +18,8 @@ export default function Header() {
             <em>트릭시</em>
           </a>
           <a href="https://cyphers.nexon.com/game/character/info/sidney" target="_blank">
-            <img src="https://resource.cyphers.co.kr/ui/img/char/char62.png" alt="시드니" />
-            <em>시드니</em>
+            <img src="https://resource.cyphers.co.kr/ui/img/char/char56.png" alt="클리브" />
+            <em>클리브</em>
           </a>
           <a href="https://cyphers.nexon.com/game/character/info/melvin" target="_blank">
             <img src="https://resource.cyphers.co.kr/ui/img/char/char54.png" alt="멜빈" />

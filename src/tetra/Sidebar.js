@@ -13,9 +13,9 @@ export default function Sidebar() {
           <NavLink to="/tetra/ability" className={({ isActive }) => (isActive ? "sel" : "")}>
             능력 및 활용
           </NavLink>
-          {/* <NavLink to="/tetra/skill" className={({ isActive }) => (isActive ? "sel" : "")}>
+          <NavLink to="/tetra/skill" className={({ isActive }) => (isActive ? "sel" : "")}>
             스킬
-          </NavLink> */}
+          </NavLink>
         </dd>
         <dt className="open">스토리</dt>
         <dd>
