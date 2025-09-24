@@ -1,7 +1,19 @@
+/*
+key1 : L (좌클릭)
+key2 : R (우클릭)
+key3 : LR (양클릭)
+key4 : SL (Shift 좌클릭)
+key5 : Q
+key6 : F (잡기)
+key7 : Space
+key8 : 휠업
+key9 : E (궁극기)
+*/
 export const skills = [
   {
     name: "플래시 킥",
     description: "빛의 속도로 연속 발차기를 합니다",
+    class: "key1",
     key: "마우스 좌클릭",
     cooldown: 0.30,
     range: 160,

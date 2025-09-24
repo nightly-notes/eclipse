@@ -17,7 +17,7 @@ export default function SkillBox({ skill }) {
       <div className="s2_1">
         <h3>조작키</h3>
         <div>
-          <p className="key key1">{skill.key}</p>
+          <p className={`key ${skill.class}`}>{skill.key}</p>
         </div>
       </div>
 
