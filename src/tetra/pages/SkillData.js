@@ -228,10 +228,10 @@ export const skills = [
       "잡기": {
         "판정" : [
             { label: "레벨", value: "1레벨" },
-            { label: "적용 시점", value: "없음" }
+            { label: "적용 시점", value: "스킬을 사용한 시점 부터" }
         ],
         "면역" : [
-            { label: "레벨", value: "1레벨" },
+            { label: "레벨", value: "없음" },
             { label: "적용 시점", value: "없음" }
         ]
       },
@@ -258,7 +258,7 @@ export const skills = [
     type: "근거리",
     knockdown: "OFF",
     img: tetra06,
-    detail: "자신의 주변으로 입자 벽을 만들어내 적을 밀어냅니다. 추가 조작으로 이동할 수 있습니다. 밀쳐지며 부딪힌 적군은 함께 다운 됩니다.",
+    detail: "자신의 주변으로 입자 벽을 만들어내 적을 밀어냅니다. 후방으로만 이동할 수 있으며, A, D키를 눌러 대각선으로 이동할 방향을 선택할 수 있습니다. 테트라에게 밀쳐지며 적군이 서로 부딪힌다면 테트라의 공격을 맞지 않은 적까지 함께 다운 상태가 됩니다.",
     tabs: {
       "슈퍼아머": [
         { label: "종류", value: "없음" },
@@ -303,7 +303,7 @@ export const skills = [
     type: "없음",
     knockdown: "OFF",
     img: tetra07,
-    detail: "",
+    detail: "90초 동안 방어력이 +3% 증가합니다.",
     tabs: {
       "슈퍼아머": [
         { label: "종류", value: "없음" },
