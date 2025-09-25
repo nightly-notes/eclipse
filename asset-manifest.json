@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eclipse/static/css/main.e6c13ad2.css",
-    "main.js": "/eclipse/static/js/main.a2b65673.js",
+    "main.js": "/eclipse/static/js/main.2e966c98.js",
     "static/js/453.b3159858.chunk.js": "/eclipse/static/js/453.b3159858.chunk.js",
     "static/media/tetra.png": "/eclipse/static/media/tetra.f7016ff0549edc9aaa67.png",
     "static/media/tetra_bgm.png": "/eclipse/static/media/tetra_bgm.f26d2e293ae31c9bc984.png",
@@ -18,11 +18,11 @@
     "static/media/white.png": "/eclipse/static/media/white.21cda33bb6d702a95a1d.png",
     "index.html": "/eclipse/index.html",
     "main.e6c13ad2.css.map": "/eclipse/static/css/main.e6c13ad2.css.map",
-    "main.a2b65673.js.map": "/eclipse/static/js/main.a2b65673.js.map",
+    "main.2e966c98.js.map": "/eclipse/static/js/main.2e966c98.js.map",
     "453.b3159858.chunk.js.map": "/eclipse/static/js/453.b3159858.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a2b65673.js"
+    "static/js/main.2e966c98.js"
   ]
 }
