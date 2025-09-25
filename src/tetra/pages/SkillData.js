@@ -304,7 +304,38 @@ export const skills = [
     knockdown: "OFF",
     img: tetra07,
     detail: "",
-    tabs: {},
+    tabs: {
+      "슈퍼아머": [
+        { label: "종류", value: "없음" },
+        { label: "방향", value: "없음" },
+        { label: "적용 시점", value: "없음" }
+      ],
+      "무적": [
+        { label: "종류", value: "없음" },
+        { label: "방향", value: "없음" },
+        { label: "적용 시점", value: "없음" }
+      ],
+      "잡기": {
+        "판정" : [
+            { label: "레벨", value: "없음" },
+            { label: "적용 시점", value: "없음" }
+        ],
+        "면역" : [
+            { label: "레벨", value: "없음" },
+            { label: "적용 시점", value: "없음" }
+        ]
+      },
+      "대미지": {
+        "계수" : [
+            { label: "대인", value: "없음" },
+            { label: "공성", value: "없음" },
+            { label: "몬스터", value: "없음" },
+        ],
+        "공식" : [
+            { label: "없음", value: "없음" },
+        ]
+      }
+    },
   },
   {
     name: "엔트로피 테트락티스",
