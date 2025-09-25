@@ -25,9 +25,9 @@ export default function SkillBox({ skill }) {
         <h3>기본 정보</h3>
         <div className="tbl">
             <p><b>쿨타임</b> <i>{skill.cooldown}초</i></p>
-            <p><b>공격범위</b> <i>{skill.range}</i></p>
+            <p><b>{skill.rangeNm}</b> <i>{skill.range}</i></p>
             <p><b>공격판정</b> <i>{skill.type}</i></p>
-            <p><b>다운 유발</b> <i>{skill.knockdown ? "ON" : "OFF"}</i></p>
+            <p><b>다운 유발</b> <i>{skill.knockdown}</i></p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function SkillBox({ skill }) {
 
       {/* -------------------------- 더보기 미사용 -------------------------- */}
       {/* 열리는 영억 */}
-      {false && isOpen && ( 
+      {isOpen && ( 
       <div className="s2_4 m_info" style={{display:"block"}}>
         <h3>상세 설명</h3>
         <p className="txt">{skill.detail}</p>
