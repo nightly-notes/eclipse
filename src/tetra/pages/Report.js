@@ -9,7 +9,7 @@ return (
         <span><b>코드명</b> <i>KALEIDOSCOPE</i></span>
         <span><b>연령</b> <i>26세</i></span>
         <span><b>국적</b> <i>스웨덴</i></span>
-        <span><b>신장</b> <i>152cm</i></span>
+        <span><b>신장</b> <i>162cm</i></span>
         <span><b>체중</b> <i>56kg</i></span>
         <span><b>소속</b> <i>무소속</i></span> {/* TODO: 확인필요 */}
         <span><b>직업</b> <i>물리학 연구원</i></span>
