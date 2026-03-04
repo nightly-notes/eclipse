@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import bgm from '../../img/character/bgm/tetra_bgm.png';
 
 export default function Content() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
 return (
   <section className="content">
     {/* ------------------- 콘텐츠 ------------------------- */}
@@ -39,7 +43,7 @@ return (
 
         <h3>곡 정보</h3>
         <p className="txt_box">
-          자신을 탐구하고 입증하고 인정받으며 자신의 가치를 상승시켜야 하는것이 테트라의 인생목표 입니다. 기하학적인 리듬패턴과 반복적인 리듬은 지오메트릭 스타일의 기본구성입니다. 단순하지 않는 박자와 리듬은 테트라의 기술을 더욱 빛나게 해줍니다.
+          자신을 탐구하고 가치를 증명하는 것이 테트라의 목표입니다. 기하학적인 리듬패턴과 반복적인 리듬은 제오메트릭 스타일의 기본구성입니다. 단순하지 않은 박자와 리듬은 테트라의 능력을 더욱 빛나게 해줍니다.
         </p>
 
         {/* <h3>작곡가 정보</h3>
@@ -61,7 +65,16 @@ return (
                 style={{width:'300px', height:'158px'}}
               />
               <span>
-                <a href="https://www.youtube.com/watch?v=CBJz-RwILpE" className="vod">동영상 보기</a>
+                <a 
+                  href="#" 
+                  className="vod"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(true);
+                    console.log("팝업열기");
+                  }}
+                />
+                {/* <a href="https://youtu.be/3jrJaBJ69aI?si=U7eXPKkOtgzXrD-M" target='_blank' className="vod">동영상 보기</a> */}
               </span>
             </p>
           </li>
@@ -71,20 +84,30 @@ return (
     {/* ------------------- //콘텐츠 ------------------------- */}
 
     {/* 동영상 레이어 */}
-    {/* <div className="ly_vod">
-      <p>
-        <a href="#close" className="ly_clse"></a>
-        <iframe
-          width="1090"
-          height="613"
-          src=""
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </p>
-    </div> */}
+    {isOpen && (
+      <div className="ly_vod" style={{ display: 'block' }}>
+        <p>
+          <a
+            href="#close" 
+            className="ly_clse"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsOpen(false);
+              console.log("팝업닫기");
+            }}
+          />
+          <iframe
+            width="1090"
+            height="613"
+            src="https://www.youtube.com/embed/3jrJaBJ69aI"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </p>
+      </div>
+    )}
     {/* //동영상 레이어 */}
   </section>
 );
