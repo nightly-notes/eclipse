@@ -71,7 +71,6 @@ return (
                   onClick={(e) => {
                     e.preventDefault();
                     setIsOpen(true);
-                    console.log("팝업열기");
                   }}
                 />
                 {/* <a href="https://youtu.be/3jrJaBJ69aI?si=U7eXPKkOtgzXrD-M" target='_blank' className="vod">동영상 보기</a> */}
@@ -93,7 +92,6 @@ return (
             onClick={(e) => {
               e.preventDefault();
               setIsOpen(false);
-              console.log("팝업닫기");
             }}
           />
           <iframe

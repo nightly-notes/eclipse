@@ -1,3 +1,5 @@
+import position from '../../img/character/position/탱커.png';
+
 export default function Ability() {
   return (
     <section className="content">
@@ -17,9 +19,31 @@ export default function Ability() {
           <p className="cnt cnt2"><i style={{left: `28.2%`}}>2</i></p>
           <p>공성</p>
         </div>
-
-        <h3 style={{ marginTop: "23px" }}>조작 난이도</h3>
-        <div className="s1_13">★★ <span>보통</span></div>
+        
+        {/* 260306 포지션부분 자체 제작 */}
+        <div style={{display: "flex", gap: "2px"}}>
+          <div className="s1_13" style={{height: "140px"}}>
+            <div style={{display: "block", width: "100px"}}>
+              <p>탱커</p>
+            </div>
+            <div>
+              <img src={position}/>
+            </div>
+          </div>
+          <div className="s1_13" style={{height: "140px"}}>
+            <div style={{display: "block", width: "100px"}}>
+              <p>조작난이도</p>
+              <p>보통</p>
+            </div>
+            <div>
+              ★★
+            </div>
+          </div>
+        </div>
+        
+        {/* 기존 : 포지션 삭제 버전 */}
+        {/* <h3 style={{ marginTop: "23px" }}>조작 난이도</h3>
+        <div className="s1_13">★★ <span>보통</span></div> */}
       </div>
 
       <div className="s1_2">
