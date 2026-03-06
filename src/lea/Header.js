@@ -14,16 +14,22 @@ export default function Header() {
         <h2>연관 캐릭터</h2>
         <p className="lst_char">
           <a href="https://cyphers.nexon.com/game/character/info/trixie" target="_blank">
-            <img src="https://resource.cyphers.co.kr/ui/img/char/char27.png" alt="트릭시" />
+            <img
+              src="https://resource.cyphers.co.kr/ui/img/char/char27.png"
+              onMouseEnter={(e) => (e.target.src = "https://resource.cyphers.co.kr/ui/img/char/char27_on.png")}
+              onMouseLeave={(e) => (e.target.src = "https://resource.cyphers.co.kr/ui/img/char/char27.png")}
+              alt="트릭시"
+            />
             <em>트릭시</em>
           </a>
-          <a href="https://cyphers.nexon.com/game/character/info/sidney" target="_blank">
-            <img src="https://resource.cyphers.co.kr/ui/img/char/char56.png" alt="클리브" />
+          <a href="https://cyphers.nexon.com/game/character/info/clive" target="_blank">
+            <img
+              src="https://resource.cyphers.co.kr/ui/img/char/char56.png"
+              onMouseEnter={(e) => (e.target.src = "https://resource.cyphers.co.kr/ui/img/char/char56_on.png")}
+              onMouseLeave={(e) => (e.target.src = "https://resource.cyphers.co.kr/ui/img/char/char56.png")}
+              alt="클리브"
+            />
             <em>클리브</em>
-          </a>
-          <a href="https://cyphers.nexon.com/game/character/info/melvin" target="_blank">
-            <img src="https://resource.cyphers.co.kr/ui/img/char/char54.png" alt="멜빈" />
-            <em>멜빈</em>
           </a>
         </p>
         

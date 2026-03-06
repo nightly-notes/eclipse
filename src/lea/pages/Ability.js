@@ -1,25 +1,50 @@
+import position from '../../img/character/position/근딜.png';
+
 export default function Ability() {
   return (
     <section className="content">
       <h2 className="mb3">타입 및 능력</h2>
-      <p className="txt">적을 무력화시킬 수 있어 1:1에 강한 캐릭터</p>
+      <p className="txt">이하 작성 중</p>
+      {/* <p className="txt">적을 무력화시킬 수 있어 1:1에 강한 캐릭터</p> */}
 
       <div className="s1_1">
         <h3>캐릭터 타입</h3>
         <div className="st_bar s1_11">
           <p>근거리</p>
-          <p className="cnt cnt1"><i style={{left: `37.6%`}}>3</i></p>
+          <p className="cnt cnt1"><i style={{left: `37.6%`}}>4</i></p>
           <p>원거리</p>
         </div>
 
         <div className="st_bar s1_12">
           <p>대인</p>
-          <p className="cnt cnt2"><i>4</i></p>
+          <p className="cnt cnt1"><i style={{left: `28.2%`}}>3</i></p>
           <p>공성</p>
         </div>
 
-        <h3 style={{ marginTop: "23px" }}>조작 난이도</h3>
-        <div className="s1_13">★★ <span>보통</span></div>
+        {/* 260306 포지션부분 자체 제작 */}
+        <div style={{display: "flex", gap: "2px"}}>
+          <div className="s1_13" style={{height: "140px"}}>
+            <div style={{display: "block", width: "110px"}}>
+              <span>근거리 딜러</span>
+            </div>
+            <div>
+              <img src={position}/>
+            </div>
+          </div>
+          <div className="s1_13" style={{height: "140px"}}>
+            <div style={{display: "block", width: "110px"}}>
+              <span>조작난이도</span><br />
+              <span>어려움</span>
+            </div>
+            <div>
+              ★★★
+            </div>
+          </div>
+        </div>
+        
+        {/* 기존 : 포지션 삭제 버전 */}
+        {/* <h3 style={{ marginTop: "23px" }}>조작 난이도</h3>
+        <div className="s1_13">★★★ <span>어려움</span></div> */}
       </div>
 
       <div className="s1_2">
