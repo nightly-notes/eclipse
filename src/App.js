@@ -1,5 +1,6 @@
 import { HashRouter  as Router, Routes, Route, Navigate } from "react-router-dom";
 
+import MainApp from "main/MainApp";
 import LeaApp from "lea/LeaApp";
 import TetraApp from "tetra/TetraApp";
 
@@ -8,7 +9,10 @@ export default function App() {
     <Router>
       <Routes>
         {/* default */}
-        <Route path="/" element={<Navigate to="/lea" />} />
+        <Route path="/" element={<Navigate to="/main" />} />
+
+        {/* main 목록 */}
+        <Route path="/main/*" element={<MainApp />} />
 
         {/* /lea 관련 하위 경로 */}
         <Route path="/lea/*" element={<LeaApp />} />
